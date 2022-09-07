@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <link rel="stylesheet" href="Project_2.css"/> 
+        <link rel="icon" type="image/x-icon" href="2favicon.ico">
+    </head>
+    <body>
+    <h1 id="Title" styl style="color: white" >
+        My drawings
+    </h1>
+    <p class="information" style="color: white">
+        I am learning to draw by practicing on pictures based on animes
+    </p>
+    <p class="information" style="color: white">
+        Animes that I draw from:
+    </p>
+    <div style="text-align:center">
+        <a class="animetitle" style="color: white" href="#Anime-1">
+            <i>Boogiepop Phantom</i>
+        </a>
+    </div>
+    <div style="text-align:center"> 
+        <a class="animetitle" style="color: white" href="#Anime-2">
+        <i> Serial Experiment Lain</i>
+        </a>
+    </div>
+    <div style="text-align:center"> 
+        <a class="animetitle" style="color: white" href="#Anime-3">
+        <i> Beelzebub</i>
+        </a>
+    </div>
+    <div style="text-align:center"> 
+        <a class="animetitle" style="color: white" href="#Anime-4">
+        <i> The Melancholy of Haruhi Suzumiya</i>
+        </a>
+    </div>
+    <div style="text-align:center"> 
+        <a class="animetitle" style="color: white" href="#Anime-5">
+        <i> The Promised Neverland</i>
+        </a>
+    </div>
+    <div style="text-align:center"> 
+        <a class="animetitle" style="color: white" href="#Anime-6">
+        <i> Tokyo Revengers</i>
+        </a>
+    </div>
+    <p id="Anime-1" style="color: white">
+        Boogiepop Phantom
+    </p>
+    <div class="row">
+        <div class="column">
+            <img id="oneimg-1" src="oikawa_masami.jpg" alt="oikawa_masami" style="width: 100%" onclick="update(this, 0);">
+        </div>
+        <div class="column">
+            <img id="oneimg-2" src="misuzu_arito.jpg" alt="misuzu_arito" style="width: 100%" onclick="update(this, 0);">
+        </div> 
+        <div class="column">
+            <img id="oneimg-3" src="saotome_masami.jpg" alt="saotome_masami" style="width: 100%" onclick="update(this, 0);">
+        </div>
+        <div class="column">
+            <img id="oneimg-4" src="jonouchi_hisashi.jpg" alt="jonouchi_hisashi" style="width: 100%" onclick="update(this, 0);">
+        </div>
+        <p class="left" style="color: white" onclick="shift_left('one', 0);">&#60;</p>
+        <p class="right" style="color: white" onclick="shift_right('one', 0);">&#62;</p>
+    </div>
+    <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img class="enlarged" style="width: 50%; display: block;">
+        <div class="text" style="color: white"></div> 
+    </div>
+    <p id="Anime-2" style="color: white">
+        Serial Experiment Lain
+    </p>
+    <div class="row">
+        <div class="column">
+            <img id="twoimg-1" src="bad_lain_iwakura.jpg" alt="bad_lain_iwakura" style="width: 100%" onclick="update(this, 1);">
+        </div>
+        <div class="column">
+            <img id="twoimg-2" src="lain_iwakura_on_computer.jpg" alt="lain_iwakura_on_computer" style="width: 100%" onclick="update(this, 1);">
+        </div> 
+        <div class="column">
+            <img id="twoimg-3" src="lain_iwakura_shy.jpg" alt="lain_iwakura_shy" style="width: 100%" onclick="update(this, 1);">
+        </div>
+        <div class="column">
+            <img id="twoimg-4" src="lain_iwakura_worried.jpg" alt="lain_iwakura_worried" style="width: 100%" onclick="update(this, 1);">
+        </div>
+        <p class="left" style="color: white" onclick="shift_left('two', 1);">&#60;</p>
+        <p class="right" style="color: white" onclick="shift_right('two', 1);">&#62;</p>
+    </div>
+    <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img class="enlarged" style="width: 50%; display: block;">
+        <div class="text" style="color: white"></div> 
+    </div>
+    <p id="Anime-3" style="color: white">
+        Beelzebub
+    </p>
+    <div class="row">
+        <div class="column">
+            <img id="threeimg-1" src="evil_oga_tatsumi.jpg" alt="evil_oga_tatsumi" style="width: 100%" onclick="update(this, 2);">
+        </div>
+        <div class="column">
+            <img id="threeimg-2" src="furuichi_takayuki.jpg" alt="furuichi_takayuki" style="width: 100%" onclick="update(this, 2);">
+        </div> 
+        <div class="column">
+            <img id="threeimg-3" src="hanazawa_yuka.jpg" alt="hanazawa_yuka" style="width: 100%" onclick="update(this, 2);">
+        </div>
+        <div class="column">
+            <img id="threeimg-4" src="himekawa_tatsuya.jpg" alt="himekawa_tatsuya" style="width: 100%" onclick="update(this, 2);">
+        </div>
+        <p class="left" style="color: white" onclick="shift_left('three', 2);">&#60;</p>
+        <p class="right" style="color: white" onclick="shift_right('three', 2);">&#62;</p>
+    </div>
+    <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img class="enlarged" style="width: 50%; display: block;">
+        <div class="text" style="color: white"></div> 
+    </div>
+    <p id="Anime-4" style="color: white">
+        The Melancholy Of Haruhi Suzumiya
+    </p>
+    <div class="row">
+        <div class="column">
+            <img id="fourimg-1" src="koizumi_itsuki.jpg" alt="koizumi_itsuki" style="width: 100%" onclick="update(this, 3);">
+        </div>
+        <div class="column">
+            <img id="fourimg-2" src="kyon.jpg" alt="kyon" style="width: 100%" onclick="update(this, 3);">
+        </div> 
+        <div class="column">
+            <img id="fourimg-3" src="yuki_nagato.jpg" alt="yuki_nagato" style="width: 100%" onclick="update(this, 3);">
+        </div>
+        <p class="left" style="color: white" onclick="shift_left('four', 3);">&#60;</p>
+        <p class="right" style="color: white" onclick="shift_right('four', 3);">&#62;</p>
+    </div>
+    <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img class="enlarged" style="width: 50%; display: block;">
+        <div class="text" style="color: white"></div> 
+    </div>
+    <p id="Anime-5" style="color: white">
+        The Promised Neverland
+    </p>
+    <div class="row">
+        <div class="column">
+            <img id="fiveimg-1" src="norman.jpg" alt="norman" style="width: 100%" onclick="update(this, 4);">
+        </div>
+        <p class="left" style="color: white" onclick="shift_left('five', 4);">&#60;</p>
+        <p class="right" style="color: white" onclick="shift_right('five', 4);">&#62;</p>
+    </div>
+    <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img class="enlarged" style="width: 50%; display: block;">
+        <div class="text" style="color: white"></div> 
+    </div>
+    <p id="Anime-6" style="color: white">
+        Tokyo Revengers
+    </p>
+    <div class="row">
+        <div class="column">
+            <img id="siximg-1" src="takemichi_hanagaki.jpg" alt="takemichi_hanagaki" style="width: 100%" onclick="update(this, 5);">
+        </div>
+        <p class="left" style="color: white" onclick="shift_left('six', 5);">&#60;</p>
+        <p class="right" style="color: white" onclick="shift_right('six', 5);">&#62;</p>
+    </div>
+    <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img class="enlarged" style="width: 50%; display: block;">
+        <div class="text" style="color: white"></div> 
+    </div>
+    <script>
+        for (let i = 0; i < 6; i ++) {
+            document.getElementsByClassName("left")[i].innerHTML = "<<";
+            document.getElementsByClassName("right")[i].innerHTML = ">>";
+            document.getElementsByClassName("left")[i].style.visibility = "hidden";
+        }
+        document.getElementsByClassName("right")[0].style.visibility = "hidden";
+        document.getElementsByClassName("right")[3].style.visibility = "hidden";
+        document.getElementsByClassName("right")[4].style.visibility = "hidden";
+        document.getElementsByClassName("right")[5].style.visibility = "hidden";
+    </script>
+    <script>
+        function update(image, ind) {
+            var expanded_img = document.getElementsByClassName("enlarged")[ind];
+            var the_text = document.getElementsByClassName("text")[ind];
+            document.getElementsByClassName("enlarged")[ind].style.margin = "0 auto";
+            expanded_img.src = image.src;
+            the_text.innerHTML = image.alt;
+            expanded_img.parentElement.style.display = "block";
+        }
+        
+        function shift_right(row_num, ind) {
+            var left = "left";
+            var right = "right";
+            document.getElementsByClassName(left)[ind].style.visibility = "visible";
+            if (ind == 0) {
+                var all_elements = ["oikawa_masami.jpg", "misuzu_arito.jpg", "saotome_masami.jpg", "jonouchi_hisashi.jpg"];
+            }
+            else if (ind == 1) {
+                var all_elements = ["bad_lain_iwakura.jpg", "lain_iwakura_on_computer.jpg", "lain_iwakura_shy.jpg", "lain_iwakura_worried.jpg", "fixated_lain_iwakura.jpg", "mirror_lain_iwakura.jpg"];
+            }
+            else if (ind == 2) {
+                var all_elements = ["evil_oga_tatsumi.jpg", "furuichi_takayuki.jpg", "hanazawa_yuka.jpg", "himekawa_tatsuya.jpg", "kanzaki_hajime.jpg", "kunieda_aoi.jpg", "natsume_shintarou.jpg", "serious_furuichi_takayuki.jpg", "shiroyama_takeshi.jpg", "smiling_oga_tatsumi.jpg", "tanimura _chiaki.jpg", "toujou_hidetora.jpg", "umemiya_kaoru.jpg"];
+            }
+            else if (ind == 3) {
+                var all_elements = ["koizumi_itsuki.jpg", "kyon.jpg", "yuki_nagato.jpg"];
+            }
+            else if (ind == 4) {
+                var all_elements = ["norman.jpg"];
+            }
+            else {
+                var all_elements = ["takemichi_hanagaki.jpg"];
+            }
+            var img_1 = String(row_num) + "img-1";
+            var img_2 = String(row_num) + "img-2";
+            var img_3 = String(row_num) + "img-3";
+            var img_4 = String(row_num) + "img-4";
+            var first_img = document.getElementById(img_1).alt;
+            const regex = new RegExp(first_img);
+            const list_len = all_elements.length;
+            var index = 0;
+            for (let i = 0; i < (list_len); i ++) {
+                if (regex.test(all_elements[i])) {
+                    index = i;
+                    break;
+                }
+            }
+            if (first_img != all_elements[list_len - 4].slice(0, -4)) {
+                document.getElementById(img_1).src = document.getElementById(img_2).src;
+                document.getElementById(img_1).alt = document.getElementById(img_2).alt;
+                document.getElementById(img_2).src = document.getElementById(img_3).src;
+                document.getElementById(img_2).alt = document.getElementById(img_3).alt;
+                document.getElementById(img_3).src = document.getElementById(img_4).src;
+                document.getElementById(img_3).alt = document.getElementById(img_4).alt;
+                document.getElementById(img_4).src = all_elements[index + 4];
+                document.getElementById(img_4).alt = all_elements[index + 4].slice(0, -4);
+            }
+            var first_img = document.getElementById(img_1).alt;
+            if (first_img == all_elements[list_len - 4].slice(0, -4)) {
+                document.getElementsByClassName(right)[ind].style.visibility = "hidden";
+            }
+        }
+
+        function shift_left(row_num, ind) {
+            var left = "left";
+            var right = "right";
+            document.getElementsByClassName(right)[ind].style.visibility = "visible";
+            var img_1 = String(row_num) + "img-1";
+            var img_2 = String(row_num) + "img-2";
+            var img_3 = String(row_num) + "img-3";
+            var img_4 = String(row_num) + "img-4";
+            var first_img = document.getElementById(img_1).alt;
+            if (ind == 0) {
+                var all_elements = ["oikawa_masami.jpg", "misuzu_arito.jpg", "saotome_masami.jpg", "jonouchi_hisashi.jpg"];
+            }
+            else if (ind == 1) {
+                var all_elements = ["bad_lain_iwakura.jpg", "lain_iwakura_on_computer.jpg", "lain_iwakura_shy.jpg", "lain_iwakura_worried.jpg", "fixated_lain_iwakura.jpg"];
+            }
+            else if (ind == 2) {
+                var all_elements = ["evil_oga_tatsumi.jpg", "furuichi_takayuki.jpg", "hanazawa_yuka.jpg", "himekawa_tatsuya.jpg", "kanzaki_hajime.jpg", "kunieda_aoi.jpg", "natsume_shintarou.jpg", "serious_furuichi_takayuki.jpg", "shiroyama_takeshi.jpg", "smiling_oga_tatsumi.jpg", "tanimura _chiaki.jpg", "toujou_hidetora.jpg", "umemiya_kaoru.jpg"];
+            }
+            else {
+                var all_elements = ["koizumi_itsuki.jpg", "kyon.jpg", "yuki_nagato.jpg"];
+            }            
+            const regex = new RegExp(first_img);
+            const list_len = all_elements.length;
+            var index = 0;
+            for (let i = 0; i < (list_len); i ++) {
+                if (regex.test(all_elements[i])) {
+                    index = i;
+                    break;
+                }
+            }
+            if (first_img != all_elements[0].slice(0, -4)) {
+                document.getElementById(img_4).src = document.getElementById(img_3).src;
+                document.getElementById(img_4).alt = document.getElementById(img_3).alt;
+                document.getElementById(img_3).src = document.getElementById(img_2).src;
+                document.getElementById(img_3).alt = document.getElementById(img_2).alt;
+                document.getElementById(img_2).src = document.getElementById(img_1).src;
+                document.getElementById(img_2).alt = document.getElementById(img_1).alt;
+                document.getElementById(img_1).src = all_elements[index - 1];
+                document.getElementById(img_1).alt = all_elements[index - 1].slice(0, -4);
+            }
+            var first_img = document.getElementById(img_1).alt;
+            if (first_img == all_elements[0].slice(0, -4)) {
+                document.getElementsByClassName(left)[ind].style.visibility = "hidden";
+            }
+        }
+    </script>
+    </body>
+</html> 
