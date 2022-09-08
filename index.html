@@ -227,12 +227,27 @@
                 }
             }
             if (first_img != all_elements[list_len - 4].slice(0, -4)) {
+                document.getElementById(img_1).className += 'hidden';
+                setTimeout(function() {document.getElementById(img_1).className = document.getElementById(img_1).className.replace('hidden', '');}, 3500);
+
                 document.getElementById(img_1).src = document.getElementById(img_2).src;
                 document.getElementById(img_1).alt = document.getElementById(img_2).alt;
+
+                document.getElementById(img_2).className += 'hidden';
+                setTimeout(function() {document.getElementById(img_2).className = document.getElementById(img_2).className.replace('hidden', '');}, 3500);
+
                 document.getElementById(img_2).src = document.getElementById(img_3).src;
                 document.getElementById(img_2).alt = document.getElementById(img_3).alt;
+
+                document.getElementById(img_3).className += 'hidden';
+                setTimeout(function() {document.getElementById(img_3).className = document.getElementById(img_3).className.replace('hidden', '');}, 3500);
+
                 document.getElementById(img_3).src = document.getElementById(img_4).src;
                 document.getElementById(img_3).alt = document.getElementById(img_4).alt;
+
+                document.getElementById(img_4).className += 'hidden';
+                setTimeout(function() {document.getElementById(img_4).className = document.getElementById(img_4).className.replace('hidden', '');}, 3500);
+
                 document.getElementById(img_4).src = all_elements[index + 4];
                 document.getElementById(img_4).alt = all_elements[index + 4].slice(0, -4);
             }
@@ -273,12 +288,28 @@
                 }
             }
             if (first_img != all_elements[0].slice(0, -4)) {
+                document.getElementById(img_4).className += 'hidden';
+                setTimeout(function() {document.getElementById(img_4).className = document.getElementById(img_4).className.replace('hidden', '');}, 3500);
+
                 document.getElementById(img_4).src = document.getElementById(img_3).src;
                 document.getElementById(img_4).alt = document.getElementById(img_3).alt;
+
+                
+                document.getElementById(img_3).className += 'hidden';
+                setTimeout(function() {document.getElementById(img_3).className = document.getElementById(img_3).className.replace('hidden', '');}, 3500);
+
                 document.getElementById(img_3).src = document.getElementById(img_2).src;
                 document.getElementById(img_3).alt = document.getElementById(img_2).alt;
+                
+                document.getElementById(img_2).className += 'hidden';
+                setTimeout(function() {document.getElementById(img_2).className = document.getElementById(img_2).className.replace('hidden', '');}, 3500);
+
                 document.getElementById(img_2).src = document.getElementById(img_1).src;
                 document.getElementById(img_2).alt = document.getElementById(img_1).alt;
+                
+                document.getElementById(img_1).className += 'hidden';
+                setTimeout(function() {document.getElementById(img_1).className = document.getElementById(img_1).className.replace('hidden', '');}, 3500);
+
                 document.getElementById(img_1).src = all_elements[index - 1];
                 document.getElementById(img_1).alt = all_elements[index - 1].slice(0, -4);
             }
