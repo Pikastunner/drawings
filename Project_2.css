@@ -2,12 +2,15 @@
     box-sizing: border-box;
     /*border: 1px solid green; */
 }
-@keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-    to {
+.hidden {
+    animation: fadeIn ease 3.5s;
+}
+@keyframes fadeIn {
+    0% {
         opacity: 0;
+    }
+    100% {
+        opacity: 0.8;
     }
 }
 #Title {
