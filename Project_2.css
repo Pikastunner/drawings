@@ -75,6 +75,7 @@
     box-sizing: content-box;  
     position: relative;
     font-size: 200%;
+    left: 0.5%;
     /*left: 20px;*/
     width: 10px;
     height: 10px;
