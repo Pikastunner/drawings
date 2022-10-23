@@ -66,7 +66,7 @@
     box-sizing: content-box;  
     position: relative;
     font-size: 200%;
-    left: 1800px;
+    left: 97%;
     width: 10px;
     height: 10px;
     opacity: 0.5;
@@ -75,7 +75,7 @@
     box-sizing: content-box;  
     position: relative;
     font-size: 200%;
-    left: 20px;
+    /*left: 20px;*/
     width: 10px;
     height: 10px;
     opacity: 0.5;
