@@ -46,6 +46,11 @@
         <i> Tokyo Revengers</i>
         </a>
     </div>
+    <div style="text-align:center"> 
+        <a class="animetitle" style="color: white" href="#Anime-7">
+        <i> Texhnolyze</i>
+        </a>
+    </div>
     <p id="Anime-1" style="color: white">
         Boogiepop Phantom
     </p>
@@ -63,7 +68,7 @@
             <img id="oneimg-4" src="jonouchi_hisashi.jpg" alt="jonouchi_hisashi" style="width: 100%" onclick="update(this, 0);">
         </div>
         <p class="left" style="color: white" onclick="shift_left('one', 0);">&#60;</p>
-        <p class="right" style="color: white" onclick="shift_right('one', 0);">&#62;</p>
+        <p class="right" style="color: white; text-align: right;" onclick="shift_right('one', 0);">&#62;</p>
     </div>
     <div class="container">
         <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
@@ -169,6 +174,21 @@
         <img class="enlarged" style="width: 50%; display: block;">
         <div class="text" style="color: white"></div> 
     </div>
+    <p id="Anime-7" style="color: white">
+        Texhnolyze
+    </p>
+    <div class="row">
+        <div class="column">
+            <img id="siximg-1" src="ichise.jpg" alt="ichise" style="width: 100%" onclick="update(this, 6);">
+        </div>
+        <p class="left" style="color: white" onclick="shift_left('seven', 6);">&#60;</p>
+        <p class="right" style="color: white" onclick="shift_right('seven', 6);">&#62;</p>
+    </div>
+    <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img class="enlarged" style="width: 50%; display: block;">
+        <div class="text" style="color: white"></div> 
+    </div>
     <script>
         for (let i = 0; i < 6; i ++) {
             document.getElementsByClassName("left")[i].innerHTML = "<<";
@@ -178,6 +198,7 @@
         document.getElementsByClassName("right")[3].style.visibility = "hidden";
         document.getElementsByClassName("right")[4].style.visibility = "hidden";
         document.getElementsByClassName("right")[5].style.visibility = "hidden";
+        document.getElementsByClassName("right")[6].style.visibility = "hidden";
     </script>
     <script>
         function update(image, ind) {
@@ -194,13 +215,17 @@
             var right = "right";
             document.getElementsByClassName(left)[ind].style.visibility = "visible";
             if (ind == 0) {
-                var all_elements = ["oikawa_masami.jpg", "misuzu_arito.jpg", "saotome_masami.jpg", "jonouchi_hisashi.jpg", "suganuma_yoji.jpg"];
+                var all_elements = ["oikawa_masami.jpg", "misuzu_arito.jpg", "saotome_masami.jpg",
+                 "jonouchi_hisashi.jpg", "suganuma_yoji.jpg"];
             }
             else if (ind == 1) {
-                var all_elements = ["bad_lain_iwakura.jpg", "lain_iwakura_on_computer.jpg", "lain_iwakura_shy.jpg", "lain_iwakura_worried.jpg", "fixated_lain_iwakura.jpg", "mirror_lain_iwakura.jpg", "wired_lain.jpg"];
+                var all_elements = ["bad_lain_iwakura.jpg", "lain_iwakura_on_computer.jpg", "lain_iwakura_shy.jpg", "lain_iwakura_worried.jpg", 
+                "fixated_lain_iwakura.jpg", "mirror_lain_iwakura.jpg", "wired_lain.jpg"];
             }
             else if (ind == 2) {
-                var all_elements = ["evil_oga_tatsumi.jpg", "furuichi_takayuki.jpg", "hanazawa_yuka.jpg", "himekawa_tatsuya.jpg", "kanzaki_hajime.jpg", "kunieda_aoi.jpg", "natsume_shintarou.jpg", "serious_furuichi_takayuki.jpg", "shiroyama_takeshi.jpg", "smiling_oga_tatsumi.jpg", "tanimura _chiaki.jpg", "toujou_hidetora.jpg", "umemiya_kaoru.jpg"];
+                var all_elements = ["evil_oga_tatsumi.jpg", "furuichi_takayuki.jpg", "hanazawa_yuka.jpg", "himekawa_tatsuya.jpg", 
+                "kanzaki_hajime.jpg", "kunieda_aoi.jpg", "natsume_shintarou.jpg", "serious_furuichi_takayuki.jpg", "shiroyama_takeshi.jpg", 
+                "smiling_oga_tatsumi.jpg", "tanimura _chiaki.jpg", "toujou_hidetora.jpg", "umemiya_kaoru.jpg"];
             }
             else if (ind == 3) {
                 var all_elements = ["koizumi_itsuki.jpg", "kyon.jpg", "yuki_nagato.jpg"];
@@ -208,8 +233,11 @@
             else if (ind == 4) {
                 var all_elements = ["norman.jpg"];
             }
-            else {
+            else if (ind == 5) {
                 var all_elements = ["takemichi_hanagaki.jpg"];
+            }
+            else {
+                var all_elements = ["ichise.jpg"];
             }
             var img_1 = String(row_num) + "img-1";
             var img_2 = String(row_num) + "img-2";
